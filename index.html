@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Horse, The Swan, and the Two-Faced Man — One Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* --- GLOBAL RESET --- */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Montserrat', sans-serif; background:#0a0a0a; color:white; }
+
+    /* --- NAVIGATION --- */
+    header { position:fixed; top:0; left:0; width:100%; padding:1rem 2rem; background:rgba(0,0,0,0.75); backdrop-filter:blur(6px); display:flex; justify-content:space-between; align-items:center; z-index:1000; }
+    .brand { font-family:'Special Elite', monospace; font-size:1rem; letter-spacing:1px; }
+    nav a { margin-left:1rem; color:white; text-decoration:none; font-size:0.85rem; }
+    nav a:hover { text-decoration:underline; }
+
+    /* --- SECTIONS --- */
+    section { padding:6rem 2rem; width:100%; }
+    h2 { font-family:'Special Elite'; font-size:1.8rem; margin-bottom:1rem; text-align:center; }
+    p { max-width:700px; margin:0 auto; text-align:center; line-height:1.6; font-size:0.9rem; }
+
+    /* --- HERO --- */
+    .hero { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; padding-top:8rem; }
+    .poster { width:260px; border:4px solid #333; box-shadow:0 0 20px rgba(0,0,0,0.7); margin:1rem; }
+    .hero-right { max-width:500px; text-align:center; margin:1rem; }
+    .title { font-family:'Special Elite'; font-size:1.8rem; margin-bottom:1rem; }
+
+    .cta-row { display:flex; justify-content:center; gap:1rem; margin:1rem 0; }
+    .btn { background:#b10000; color:white; padding:0.5rem 1rem; border:none; cursor:pointer; font-size:0.85rem; }
+    .ghost { background:transparent; border:1px solid #b10000; }
+
+    /* --- EVIDENCE BOARD --- */
+    .detective-board { display:flex; justify-content:center; gap:2rem; background:url('assets/images/corkboard-texture.jpg'); background-size:cover; padding:2rem; border:6px solid #3a2f23; }
+    .small-polaroid { background:white; padding:10px; width:170px; box-shadow:0 6px 12px rgba(0,0,0,0.6); }
+    .small-polaroid img { width:100%; }
+    .caption { color:#111; font-size:0.75rem; text-align:center; }
+
+    /* --- GALLERY --- */
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; padding:1rem 0; }
+    .gallery-grid img { width:100%; border:3px solid #222; }
+
+    /* --- CAST --- */
+    .cast-list { max-width:700px; margin:0 auto; }
+    .cast-item { margin-bottom:0.5rem; font-size:0.9rem; text-align:center; }
+
+    /* --- SCREENINGS --- */
+    .screenings-list { max-width:700px; margin:0 auto; }
+
+    /* --- CONTACT --- */
+    .contact-box { max-width:600px; margin:0 auto; text-align:center; }
+
+    /* Smooth Scroll */
+    html { scroll-behavior:smooth; }
+    /* Normalize font weight for contact text and links */
+  .contact-section p,
+  .contact-section a {
+    font-weight: 400 !important;
+  }
+  /* Center social media links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+</style>
+  <style>
+    /* --- RED STRING SIDE DECORATION --- */
+    .side-string {
+      position: fixed;
+      top: 0;
+      width: 6px;
+      height: 100vh;
+      background: red;
+      z-index: 900;
+    }
+    .side-string.left { left: 0; }
+    .side-string.right { right: 0; }
+
+    /* Decorative items */
+    .decor-item {
+      position: absolute;
+      z-index: 850;
+      width: 120px;
+      opacity: 0.9;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="side-string left"></div>
+<div class="side-string right"></div>
+
+<img src="assets/images/painting.png" class="decor-item painting" alt="Painting">
+<img src="assets/images/flashlight.png" class="decor-item flashlight" alt="Flashlight">
+<img src="assets/images/chesspiece.png" class="decor-item chess-piece" alt="Chess Piece">
+
+<header>
+  <div class="brand">The Horse, The Swan, and the Two-Faced Man</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#cast">Cast & Crew</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#screenings">Screenings</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <img src="assets/images/poster-placeholder.jpg" class="poster" alt="Poster">
+  <div class="hero-right">
+    <h1 class="title">The Horse, The Swan,<br>and the Two-Faced Man</h1>
+    <p>Murphy must use his wit to determine who committed the crime.</p>
+
+    <div class="cta-row">
+      <button class="btn">Open Case File</button>
+      <button class="btn ghost">Read the Brief</button>
+    </div>
+  </div>
+</section>
+
+<!-- CASE SUMMARY -->
+<section id="summary">
+  <h2>Case Summary</h2>
+  <p>Murphy is a detective who must solve the case of the missing painting in the gallery. Who is the real culprit?</p>
+</section>
+
+<!-- EVIDENCE BOARD -->
+<section id="evidence">
+  <h2>Evidence Board</h2>
+  <div class="detective-board">
+    <div class="small-polaroid"><img src="assets/images/scene1.jpg"><div class="caption">Barney</div></div>
+    <div class="small-polaroid"><img src="assets/images/photo2.png"><div class="caption">Murphy</div></div>
+    <div class="small-polaroid"><img src="assets/images/photo3.png"><div class="caption">Detective</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About the Film</h2>
+  <p>When a semi-priceless painting goes missing from a museum, it's up to a detective and his assistant to put the clues together and catch the thief.</p>
+</section>
+
+<!-- CAST -->
+<section id="cast">
+  <h2>Cast & Crew</h2>
+  <div class="cast-list">
+    <!-- Cast Section -->
+    <div class="cast-item">Koldyn Smith — Murphy</div>
+    <div class="cast-item">Tristan N. Sojka — Barney</div>
+    <div class="cast-item">Bennie Shawn Bumpers — Holmes</div>
+    <div class="cast-item">Bee Wipper — Morgan</div>
+    <div class="cast-item">William Graves — Otis</div>
+
+    <div style="height: 1.5rem;"></div>
+
+    <!-- Crew Section -->
+    <div class="cast-item">Richard Powers — Director / Writer / Editor</div>
+    <div class="cast-item">Haley Perini — Producer</div>
+    <div class="cast-item">Brianna Huett — Impact Producer</div>
+    <div class="cast-item">Reagan Padgett — 1st Assistant Director</div>
+    <div class="cast-item">Chandler Crosby — 2nd Assistant Director</div>
+    <div class="cast-item">John Lewis — Script Supervisor</div>
+    <div class="cast-item">Cameron Thrash — Production Designer</div>
+    <div class="cast-item">Josh Johnson — Director of Photography / Colorist</div>
+    <div class="cast-item">Landon Owenby — B Camera Operator</div>
+    <div class="cast-item">Sam Carson — Grip & Electric Swing</div>
+    <div class="cast-item">Dylan Colvin — Grip & Electric Swing</div>
+    <div class="cast-item">Jared Colls — Production Audio Recordist</div>
+    <div class="cast-item">Ethan Bridger — A2 / Sound Utility</div>
+    <div class="cast-item">Sierra Tianyvu — DIT / Assistant Editor</div>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="assets/images/scene1.jpg" alt="Still 1">
+    <img src="assets/images/photo2.png" alt="Still 2">
+    <img src="assets/images/photo3.png" alt="Still 3">
+  </div>
+</section>
+
+<!-- SCREENINGS -->
+<section id="screenings" class="section screenings-section">
+  <h2>Screenings</h2>
+  <div class="screening-item" style="text-align:center;">
+    <h3>Media Arts Showcase</h3>
+    <p><strong>Date:</strong> December 9, 2025</p>
+    <p><strong>Time:</strong> 7:30 PM</p>
+    <p><strong>Location:</strong> Performing Arts Center, Georgia Southern University — Statesboro Campus</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:thehorseandtheswan@gmail.com">thehorseandtheswan@gmail.com</a></p>
+  <div class="social-links">
+    <a href="https://www.tiktok.com/@thehorseandtheswa" class="social">TikTok</a>
+    <a href="https://www.instagram.com/thehorse.theswan?igsh=MTFoZzdpdmxydGNhaw==" class="social">Instagram</a>
+    <a href="#" class="social">Facebook</a>
+  </div>
+</section>
+
+<footer style="text-align:center; padding:2rem; font-size:0.8rem;">
+  © 2025 The Horse, The Swan, and the Two-Faced Man
+</footer>
+
+</body>
+</html>
+
+
